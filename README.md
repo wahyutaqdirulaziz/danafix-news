@@ -1,5 +1,5 @@
 
-
+![screenpage](assets/images/screen.png)
 
 fitur
 - auth with firebase
@@ -15,4 +15,3 @@ step
 
 state management Getx
 install apk https://drive.google.com/file/d/1loBbPoQJ38o4P9hfVVId9wYv2FV0NaB0/view?usp=sharing
-![screenpage](assets/images/screen.png)
