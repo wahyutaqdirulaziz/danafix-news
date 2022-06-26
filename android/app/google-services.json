@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "591224098537",
+    "project_id": "danafix-3cbe5",
+    "storage_bucket": "danafix-3cbe5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:591224098537:android:a65b14f3352f7ca2d02a78",
+        "android_client_info": {
+          "package_name": "com.example.danafix"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "591224098537-2e8a28efjvrc2c0mrapcuqsp9973buv1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.danafix",
+            "certificate_hash": "a35fe3ec76a44f41aa88c3f3cce8b628ff24ef50"
+          }
+        },
+        {
+          "client_id": "591224098537-271as1navku13105ocst9lmt48rl98fm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkDOq1zdzMqD4StZw6RY0JM3pfS6O1nfY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "591224098537-271as1navku13105ocst9lmt48rl98fm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
