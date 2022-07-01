@@ -3,6 +3,7 @@ import 'package:get/state_manager.dart';
 import 'package:danafix/models/news.dart';
 
 class NewsController extends GetxController {
+    var count = 1.obs();
   var isLoading = true.obs;
   var isLoadingSearch = true.obs;
   List news = <Article>[].obs();
@@ -11,7 +12,7 @@ List newsSearch = <Article>[].obs();
   void getnews(int page) async {
     try {
       isLoading(true);
-      var res = await NewsApi.getnews(page: page.obs());
+      var res = await NewsApi.getnews(page: count.obs());
       news.assignAll(res.articles!.toList());
     } finally {
       isLoading(false);

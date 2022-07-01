@@ -21,7 +21,7 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   StreamSubscription? connection;
   bool isoffline = false;
-  var count = 1.obs();
+
   final NewsController newsController = Get.put(NewsController());
   final RefreshController _refreshController =
       RefreshController(initialRefresh: false);
@@ -91,20 +91,20 @@ class _HomeState extends State<Home> {
     await Future.delayed(const Duration(milliseconds: 1000));
     // if failed,use refreshFailed()
     _refreshController.refreshCompleted();
-    if (count == 1) {
+    if (newsController.count == 1) {
     } else {
-      count -= 1;
+      newsController.count -= 1;
     }
-    newsController.getnews(count);
+    newsController.getnews(newsController.count);
   }
 
   void _onLoading() async {
     // monitor network fetch
     await Future.delayed(const Duration(milliseconds: 1000));
     // if failed,use loadFailed(),if no data return,use LoadNodata()
-    count++;
+    newsController.count++;
     _refreshController.loadComplete();
-    newsController.getnews(count);
+    newsController.getnews(newsController.count);
   }
 
   void dispose() {
@@ -114,7 +114,7 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
-    newsController.getnews(count);
+    newsController.getnews(newsController.count);
     return Scaffold(
         appBar: AppBar(
           elevation: 0,
